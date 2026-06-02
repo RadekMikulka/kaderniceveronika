@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>KADEŘNICE VERONIKA – Exkluzivní kadeřnický salon v Praze 5 Stodůlky</title>
+  <meta name="description" content="Veronika Hlušičková - profesionální kadeřnice s více než 18 lety praxe. Nabízím dámské, pánské a dětské stříhání, barvení, balayage a melíry se značkou Matrix v Praze 5 Stodůlky.">
+  <meta name="keywords" content="kadeřnice, kadeřnictví Praha 5, kadeřnictví Stodůlky, Veronika Hlušičková, barvení vlasů, melír, balayage, Matrix, dámské stříhání, pánské stříhání">
+  <meta name="author" content="Kadeřnice Veronika">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kaderniceveronika.cz/">
+  <meta property="og:title" content="KADEŘNICE VERONIKA – Kadeřnictví Praha 5">
+  <meta property="og:description" content="Profesionální kadeřnická péče, střihy, barvení a melíry. 18+ let praxe, salon na Praze 5 - Stodůlky. Pracuji s profesionální kosmetikou Matrix.">
+  <meta property="og:image" content="https://kaderniceveronika.cz/wp-content/uploads/2023/03/logo-white.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://kaderniceveronika.cz/wp-content/uploads/2023/01/logo-favicon-300x300.png">
+  
+  <!-- FontAwesome Icons for premium UI styling -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <!-- Floating Booking Widget (CTA Button requested by user) -->
+  <a href="mailto:ahoj@kaderniceveronika.cz" class="booking-widget" id="floating-cta">
+    <div class="booking-widget-icon">
+      <i class="fa-solid fa-calendar-check"></i>
+    </div>
+    <span class="booking-widget-text">Objednat se</span>
+  </a>
+
+  <!-- Header Section -->
+  <header class="main-header" id="header">
+    <div class="container header-container">
+      <a href="#" class="logo" id="header-logo-link">
+        <img src="https://kaderniceveronika.cz/wp-content/uploads/2023/03/logo-white.png" alt="KADEŘNICE VERONIKA" id="header-logo">
+      </a>
+      
+      <button class="mobile-nav-toggle" id="menu-toggle" aria-label="Otevřít menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link active" data-section="home">Úvod</a></li>
+          <li><a href="#o-mne" class="nav-link" data-section="o-mne">O mně</a></li>
+          <li><a href="#cenik" class="nav-link" data-section="cenik">Ceník</a></li>
+          <li><a href="#fotogalerie" class="nav-link" data-section="fotogalerie">Fotogalerie</a></li>
+          <li><a href="#kontakt" class="nav-link" data-section="kontakt">Kontakt</a></li>
+        </ul>
+        <div class="header-cta">
+          <a href="mailto:ahoj@kaderniceveronika.cz" class="btn-premium">Objednat se</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content reveal active">
+          <span class="hero-tagline">Profesionální kadeřnictví</span>
+          <div class="hero-title">
+            <h1>KADEŘNICE VERONIKA</h1>
+            <p>Zdravím vás, vítejte na mých webových stránkách!</p>
+          </div>
+          <p class="hero-desc">
+            Jmenuji se Veronika Hlušičková a ráda se postarám o to, aby vaše vlasy byly nejen krásné, ale především zdravé a vitální. Navštivte mé moderní kadeřnictví v Praze 5 Stodůlky a dopřejte si prvotřídní péči.
+          </p>
+          <div class="hero-actions">
+            <a href="#cenik" class="btn-premium">Ceník služeb</a>
+            <a href="#kontakt" class="btn-outline">Kontakt</a>
+          </div>
+        </div>
+        
+        <div class="hero-visual reveal active">
+          <div class="hero-bg-glow"></div>
+          <div class="hero-image-container">
+            <div class="hero-image-inner">
+              <!-- Cutout showcase image from the original website -->
+              <img src="https://kaderniceveronika.cz/wp-content/uploads/2023/01/pexels-photo-1536356.jpeg" alt="Kadeřnické umění Veronika" id="hero-img">
+            </div>
+            
+            <!-- Floating Stats Badges (outside overflow:hidden wrapper) -->
+            <div class="floating-badge badge-experience">
+              <span class="badge-val">18+ let</span>
+              <span class="badge-label">Profesionální praxe</span>
+            </div>
+            
+            <div class="floating-badge badge-location">
+              <span class="badge-val">Praha 5</span>
+              <span class="badge-label">Klidná lokalita</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="scroll-indicator">
+        <span>Objevte více</span>
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+      </div>
+      
+      <div class="hero-overlay"></div>
+    </section>
+
+    <!-- O Mně (About) Section -->
+    <section class="section-padding reveal" id="o-mne">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle">Osobní přístup</span>
+          <div class="section-title">
+            <h2>Kdo pečuje o vaše vlasy?</h2>
+          </div>
+          <div class="section-header-divider"></div>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-visual">
+            <div class="about-glow"></div>
+            <div class="about-frame">
+              <img src="https://kaderniceveronika.cz/wp-content/uploads/elementor/thumbs/veronika-q1uzkh14x8vgmgryspmghjgddj5ei580vh0zx0phfs.png" alt="Veronika Hlušičková - Kadeřnice" id="about-img">
+            </div>
+            <div class="about-badge">
+              <div class="about-badge-icon"><i class="fa-solid fa-award"></i></div>
+              <div class="about-badge-text">
+                Matrix
+                <span>7 let úzké spolupráce</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-content">
+            <h3 class="about-intro-h3">Jmenuji se Veronika Hlušičková a jako kadeřnice pracuji již více než 18 let.</h3>
+            
+            <div class="about-body">
+              <p>
+                Má práce mě stále velmi baví a naplňuje. Mám ráda osobní kontakt s klienty a ráda pečuji o jejich vlasy, aby byly pěkné na pohled, ale hlavně zdravé a pěstěné zevnitř.
+              </p>
+              <p>
+                Během své kariéry jsem pracovala s renomovanými světovými značkami jako L’Oréal, Wella, Schwarzkopf či Dussy v malých i velkých salonech. Tyto bohaté zkušenosti mě posunuly vpřed, abych vám dnes mohla nabídnout ty nejlepší služby.
+              </p>
+              <p>
+                Již 7 let úzce spolupracuji se značkou <strong>Matrix</strong>. Produkty značky Matrix jsou vysoce profesionální a zároveň cenově přijatelné, ať už se jedná o veškerý sortiment potřebný k péči, stylingu, barvení či moderním technikám. U této značky se pravidelně a intenzivně školím, abych byla stále v obraze a přinášela vám ty nejnovější trendy a technologické postupy.
+              </p>
+            </div>
+            
+            <div class="about-closing">
+              <div class="about-closing-title">Těším se na vás!</div>
+              <p class="about-closing-text">
+                Dělám nejen dámy, ale i páni a děti jsou u mě vřele vítáni. Přijďte do mého nového a útulného kadeřnictví na Praze 5 a přesvědčte se sami. Občerstvení formou lahodné kávy a čaje je u mě samozřejmostí.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview Segment Cards -->
+    <section class="section-padding reveal" id="sluzby">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle">Služby pro každého</span>
+          <div class="section-title">
+            <h2>Kadeřnictví pro celou rodinu</h2>
+          </div>
+          <div class="section-header-divider"></div>
+        </div>
+        
+        <div class="segments-grid">
+          <!-- Segment 1: Dámy -->
+          <div class="segment-card">
+            <div class="segment-icon-box">
+              <i class="fa-solid fa-person-dress"></i>
+            </div>
+            <span class="segment-label">Služba</span>
+            <h3 class="segment-title">Dámské</h3>
+            <p class="segment-desc">
+              Kompletní kadeřnický servis včetně stříhání, špičkového barvení, melírování, moderní balayage, precizní foukané, tónování a tvorby společenských účesů.
+            </p>
+            <div class="segment-footer">
+              <span class="segment-price-label">Základní cena</span>
+              <span class="segment-price">od 400 Kč</span>
+            </div>
+          </div>
+
+          <!-- Segment 2: Páni -->
+          <div class="segment-card">
+            <div class="segment-icon-box">
+              <i class="fa-solid fa-person"></i>
+            </div>
+            <span class="segment-label">Služba</span>
+            <h3 class="segment-title">Pánské</h3>
+            <p class="segment-desc">
+              Moderní pánské střihy na míru, klasický střih, precizní úprava a zastřihování vousů a rychlé stříhání strojkem v klidném a stylovém prostředí.
+            </p>
+            <div class="segment-footer">
+              <span class="segment-price-label">Základní cena</span>
+              <span class="segment-price">od 250 Kč</span>
+            </div>
+          </div>
+
+          <!-- Segment 3: Děti -->
+          <div class="segment-card">
+            <div class="segment-icon-box">
+              <i class="fa-solid fa-child"></i>
+            </div>
+            <span class="segment-label">Služba</span>
+            <h3 class="segment-title">Dětské</h3>
+            <p class="segment-desc">
+              Trpělivé a milé stříhání těch nejmenších dětí do dvou let i starších chlapců a děvčat do 12 let. Udělám vše pro to, aby stříhání bylo zážitkem.
+            </p>
+            <div class="segment-footer">
+              <span class="segment-price-label">Základní cena</span>
+              <span class="segment-price">od 150 Kč</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Pricelist Section (Ceník) -->
+    <section class="section-padding reveal" id="cenik">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle">Přehledný ceník</span>
+          <div class="section-title">
+            <h2>Ceník služeb</h2>
+          </div>
+          <div class="section-header-divider"></div>
+        </div>
+
+        <!-- Tab Controls -->
+        <div class="cenik-tabs">
+          <button class="tab-btn active" data-tab="damy" id="tab-btn-damy">Dámy</button>
+          <button class="tab-btn" data-tab="pani" id="tab-btn-pani">Páni</button>
+          <button class="tab-btn" data-tab="deti" id="tab-btn-deti">Děti</button>
+          <button class="tab-btn" data-tab="doplnkove" id="tab-btn-doplnkove">Doplňkové služby</button>
+        </div>
+
+        <!-- Tab Content Panes -->
+        <div class="cenik-panes">
+          
+          <!-- Pane 1: DÁMY -->
+          <div class="cenik-pane active" id="pane-damy">
+            <div class="cenik-grid">
+              
+              <!-- Category: Foukaná & Stříhání -->
+              <div class="cenik-category-box">
+                <h3 class="category-title"><i class="fa-solid fa-wind"></i> Foukaná</h3>
+                <table class="price-table">
+                  <tr>
+                    <td class="item-name">krátké vlasy</td>
+                    <td class="item-price">450 Kč</td>
+                  </tr>
+                  <tr>
+                    <td class="item-name">středně dlouhé vlasy</td>
+                    <td class="item-price">550 Kč</td>
+                  </tr>
+                  <tr>
+                    <td class="item-name">dlouhé vlasy</td>
+                    <td class="item-price">650 Kč</td>
+                  </tr>
+                </table>
+                
+                <h3 class="category-title" style="margin-top: 30px;"><i class="fa-solid fa-scissors"></i> Stříhání</h3>
+                <table class="price-table">
+                  <tr>
+                    <td class="item-name">krátké vlasy</td>
+                    <td class="item-price">550 Kč</td>
+                  </tr>
+                  <tr>
+                    <td class="item-name">středně dlouhé vlasy</td>
+                    <td class="item-price">650 Kč</td>
+                  </tr>
+                  <tr>
+                    <td class="item-name">dlouhé vlasy</td>
+                    <td class="item-price">750 Kč</td>
+                  </tr>
+                </table>
+              </div>
+
+              <!-- Category: Barvení, Melírování, atd. -->
+              <div class="cenik-category-box">
+                <h3 class="category-title"><i class="fa-solid fa-droplet"></i> Barvení</h3>
+                <table class="price-table">
+                  <tr>
+                    <td class="item-name">krátké vlasy</td>
+                    <td class="item-price">1 050 Kč</td>
+                  </tr>
+                  <tr>
+                    <td class="item-name">středně dlouhé vlasy</td>
+                    <td class="item-price">1 250 Kč</td>
+                  </tr>
+                  <tr>
+                    <td class="item-name">dlouhé vlasy</td>
+                    <td class="item-price">1 450 Kč</td>
+                  </tr>
+                </table>
+
+                <h3 class="category-title" style="margin-top: 30px;"><i class="fa-solid fa-wand-magic-sparkles"></i> Melírování & Balayage</h3>
+                <table class="price-table">
+                  <tr>
+                    <td class="item-name">Melírování – krátké vlasy</td>
+                    <td class="item-price">1 350 Kč</td>
+                  </tr>
+                  <tr>
+                    <td class="item-name">Melírování – středně dlouhé vlasy</td>
+                    <td class="item-price">1 600 Kč</td>
+                  </tr>
+                  <tr>
+                    <td class="item-name">Melírování – dlouhé vlasy</td>
+                    <td class="item-price">1 800 Kč</td>
+                  </tr>
+                  <tr>
+                    <td class="item-name">Micromelír – středně dlouhé vlasy</td>
+                    <td class="item-price">2 050 Kč</td>
+                  </tr>
+                  <tr>
+                    <td class="item-name">Micromelír – dlouhé vlasy</td>
+                    <td class="item-price">3 050 Kč</td>
+                  </tr>
+                  <tr>
+                    <td class="item-name">Balayage – středně dlouhé vlasy</td>
+                    <td class="item-price">1 750 Kč</td>
+                  </tr>
+                  <tr>
+                    <td class="item-name">Balayage – dlouhé vlasy</td>
+                    <td class="item-price">1 950 Kč</td>
+                  </tr>
+                  <tr>
+                    <td class="item-name">Tónování – krátké vlasy</td>
+                    <td class="item-price">1 150 Kč</td>
+                  </tr>
+                  <tr>
+                    <td class="item-name">Tónování – středně dlouhé vlasy</td>
+                    <td class="item-price">1 350 Kč</td>
+                  </tr>
+                  <tr>
+                    <td class="item-name">Tónování – dlouhé vlasy</td>
+                    <td class="item-price">1 550 Kč</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Pane 2: PÁNI -->
+          <div class="cenik-pane" id="pane-pani">
+            <div class="cenik-single-box">
+              <h3 class="category-title"><i class="fa-solid fa-person"></i> Pánské střihy a péče</h3>
+              <table class="price-table">
+                <tr>
+                  <td class="item-name">stříhání strojkem</td>
+                  <td class="item-price">300 Kč</td>
+                </tr>
+                <tr>
+                  <td class="item-name">klasický střih</td>
+                  <td class="item-price">400 Kč</td>
+                </tr>
+                <tr>
+                  <td class="item-name">úprava vousů</td>
+                  <td class="item-price">200 Kč</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- Pane 3: DĚTI -->
+          <div class="cenik-pane" id="pane-deti">
+            <div class="cenik-single-box">
+              <h3 class="category-title"><i class="fa-solid fa-child"></i> Dětské stříhání</h3>
+              <table class="price-table">
+                <tr>
+                  <td class="item-name">děti do 2 let</td>
+                  <td class="item-price">200 Kč</td>
+                </tr>
+                <tr>
+                  <td class="item-name">chlapci do 12 let</td>
+                  <td class="item-price">300 Kč</td>
+                </tr>
+                <tr>
+                  <td class="item-name">děvčata do 12 let</td>
+                  <td class="item-price">350 Kč</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- Pane 4: DOPLŇKOVÉ SLUŽBY -->
+          <div class="cenik-pane" id="pane-doplnkove">
+            <div class="cenik-single-box">
+              <h3 class="category-title"><i class="fa-solid fa-sparkles"></i> Nadstandardní a doplňková péče</h3>
+              
+              <div class="doplnkove-list">
+                
+                <div class="doplnkove-item">
+                  <div class="doplnkove-title-desc">
+                    <span class="doplnkove-name">Olaplex ošetření – středně dlouhé vlasy</span>
+                    <span class="doplnkove-desc">Intenzivní rekonstrukce a ochrana vlasového vlákna</span>
+                  </div>
+                  <span class="doplnkove-price">800 Kč</span>
+                </div>
+
+                <div class="doplnkove-item">
+                  <div class="doplnkove-title-desc">
+                    <span class="doplnkove-name">Olaplex ošetření – dlouhé vlasy</span>
+                    <span class="doplnkove-desc">Intenzivní rekonstrukce pro dlouhé, namáhané vlasy</span>
+                  </div>
+                  <span class="doplnkove-price">900 Kč</span>
+                </div>
+
+                <div class="doplnkove-item">
+                  <div class="doplnkove-title-desc">
+                    <span class="doplnkove-name">Hloubkové čištění vlasů – středně dlouhé</span>
+                    <span class="doplnkove-desc">Odstranění nánosů minerálů, silikonů a stylingových zbytků</span>
+                  </div>
+                  <span class="doplnkove-price">1 500 Kč</span>
+                </div>
+
+                <div class="doplnkove-item">
+                  <div class="doplnkove-title-desc">
+                    <span class="doplnkove-name">Hloubkové čištění vlasů – dlouhé</span>
+                    <span class="doplnkove-desc">Kompletní hloubková detoxikace pro dlouhé unavené vlasy</span>
+                  </div>
+                  <span class="doplnkove-price">1 700 Kč</span>
+                </div>
+
+                <div class="doplnkove-item">
+                  <div class="doplnkove-title-desc">
+                    <span class="doplnkove-name">Laminační péče pro lesk</span>
+                    <span class="doplnkove-desc">Okamžitý zrcadlový lesk a hedvábná hebkost vlasů</span>
+                  </div>
+                  <span class="doplnkove-price">150 Kč</span>
+                </div>
+
+                <div class="doplnkove-item">
+                  <div class="doplnkove-title-desc">
+                    <span class="doplnkove-name">Žehlení / Kulmování / Natáčky</span>
+                    <span class="doplnkove-desc">Profesionální styling dle vašeho přání</span>
+                  </div>
+                  <span class="doplnkove-price">150 Kč</span>
+                </div>
+
+                <div class="doplnkove-item">
+                  <div class="doplnkove-title-desc">
+                    <span class="doplnkove-name">Společenský účes</span>
+                    <span class="doplnkove-desc">Exkluzivní účesy pro svatby, plesy a slavnostní příležitosti</span>
+                  </div>
+                  <span class="doplnkove-price">600 – 1 200 Kč</span>
+                </div>
+
+                <div class="doplnkove-item">
+                  <div class="doplnkove-title-desc">
+                    <span class="doplnkove-name">Úprava obočí</span>
+                    <span class="doplnkove-desc">Jemné dotvarování obočí pro perfektní výraz obličeje</span>
+                  </div>
+                  <span class="doplnkove-price">150 Kč</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="cenik-note">* ceny se mohou lišit dle celkové náročnosti, spotřeby materiálu, délky či hustoty vašich vlasů.</p>
+
+      </div>
+    </section>
+
+    <!-- Fotogalerie Section -->
+    <section class="section-padding reveal" id="fotogalerie">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle">Moje práce</span>
+          <div class="section-title">
+            <h2>Fotogalerie</h2>
+          </div>
+          <div class="section-header-divider"></div>
+        </div>
+
+        <!-- Premium Image Grid -->
+        <div class="gallery-grid" id="gallery-grid">
+          
+          <div class="gallery-card" data-full="https://kaderniceveronika.cz/wp-content/uploads/2023/03/DSC09834-HDR.jpg" data-index="0">
+            <img src="https://kaderniceveronika.cz/wp-content/uploads/2023/03/DSC09834-HDR-768x512.jpg" alt="Účesy a střihy - Kadeřnictví Veronika">
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            </div>
+          </div>
+
+          <div class="gallery-card" data-full="https://kaderniceveronika.cz/wp-content/uploads/2023/03/DSC09825-HDR.jpg" data-index="1">
+            <img src="https://kaderniceveronika.cz/wp-content/uploads/2023/03/DSC09825-HDR-768x512.jpg" alt="Barvení a styling - Kadeřnictví Veronika">
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            </div>
+          </div>
+
+          <div class="gallery-card" data-full="https://kaderniceveronika.cz/wp-content/uploads/2023/03/DSC09840-HDR.jpg" data-index="2">
+            <img src="https://kaderniceveronika.cz/wp-content/uploads/2023/03/DSC09840-HDR-768x512.jpg" alt="Péče Matrix - Kadeřnictví Veronika">
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            </div>
+          </div>
+
+          <div class="gallery-card" data-full="https://kaderniceveronika.cz/wp-content/uploads/2023/03/DSC09816-HDR.jpg" data-index="3">
+            <img src="https://kaderniceveronika.cz/wp-content/uploads/2023/03/DSC09816-HDR-768x512.jpg" alt="Moderní techniky - Kadeřnictví Veronika">
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            </div>
+          </div>
+
+          <div class="gallery-card" data-full="https://kaderniceveronika.cz/wp-content/uploads/2023/03/DSC09837-HDR.jpg" data-index="4">
+            <img src="https://kaderniceveronika.cz/wp-content/uploads/2023/03/DSC09837-HDR-768x512.jpg" alt="Zdravé vlasy - Kadeřnictví Veronika">
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            </div>
+          </div>
+
+          <div class="gallery-card" data-full="https://kaderniceveronika.cz/wp-content/uploads/2023/03/DSC09813-HDR.jpg" data-index="5">
+            <img src="https://kaderniceveronika.cz/wp-content/uploads/2023/03/DSC09813-HDR-768x512.jpg" alt="Společenské účesy - Kadeřnictví Veronika">
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            </div>
+          </div>
+
+          <div class="gallery-card" data-full="https://kaderniceveronika.cz/wp-content/uploads/2023/03/DSC09809-HDR.jpg" data-index="6">
+            <img src="https://kaderniceveronika.cz/wp-content/uploads/2023/03/DSC09809-HDR-768x512.jpg" alt="Krásné melíry - Kadeřnictví Veronika">
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            </div>
+          </div>
+
+          <div class="gallery-card" data-full="https://kaderniceveronika.cz/wp-content/uploads/2023/03/DSC09828-HDR.jpg" data-index="7">
+            <img src="https://kaderniceveronika.cz/wp-content/uploads/2023/03/DSC09828-HDR-768x512.jpg" alt="Salon Praha 5 - Kadeřnictví Veronika">
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            </div>
+          </div>
+
+          <div class="gallery-card" data-full="https://kaderniceveronika.cz/wp-content/uploads/2023/03/DSC09843-HDR.jpg" data-index="8">
+            <img src="https://kaderniceveronika.cz/wp-content/uploads/2023/03/DSC09843-HDR-768x512.jpg" alt="Precizní střihy - Kadeřnictví Veronika">
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Kontakt Section -->
+    <section class="section-padding reveal" id="kontakt">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle">Spojme se</span>
+          <div class="section-title">
+            <h2>Kontakt & Adresa</h2>
+          </div>
+          <div class="section-header-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact lists and info -->
+          <div class="contact-info">
+            
+            <div class="contact-list">
+              
+              <!-- Address -->
+              <div class="contact-item">
+                <div class="contact-icon-box">
+                  <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+                <div class="contact-details">
+                  <span class="contact-label">Adresa</span>
+                  <p class="contact-value">
+                    Armády 872/73,<br>Praha 5 – Stodůlky, 155 00
+                  </p>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-item">
+                <div class="contact-icon-box">
+                  <i class="fa-solid fa-phone-volume"></i>
+                </div>
+                <div class="contact-details">
+                  <span class="contact-label">Telefon (Objednávky)</span>
+                  <p class="contact-value">
+                    <a href="tel:+420728102015" id="contact-phone-link">+420 728 102 015</a>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="contact-item">
+                <div class="contact-icon-box">
+                  <i class="fa-solid fa-envelope-open-text"></i>
+                </div>
+                <div class="contact-details">
+                  <span class="contact-label">E-mail</span>
+                  <p class="contact-value">
+                    <a href="mailto:ahoj@kaderniceveronika.cz" id="contact-email-link">ahoj@kaderniceveronika.cz</a>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Working Hours -->
+              <div class="contact-item">
+                <div class="contact-icon-box">
+                  <i class="fa-solid fa-calendar-days"></i>
+                </div>
+                <div class="contact-details">
+                  <span class="contact-label">Otevírací doba dle objednání</span>
+                  <p class="contact-value">
+                    <strong>Pondělí – Pátek:</strong> 8:00 – 20:00<br>
+                    <span style="font-size: 0.85rem; color: var(--text-dim);">Sobota – Neděle: Dle individuální domluvy</span>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Socials styling -->
+            <div class="socials-box">
+              <span class="socials-title">Sledujte mě na sociálních sítích</span>
+              <div class="socials-links">
+                
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-card" id="social-fb">
+                  <i class="fa-brands fa-square-facebook"></i>
+                  <span>Facebook</span>
+                </a>
+
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-card" id="social-ig">
+                  <i class="fa-brands fa-instagram"></i>
+                  <span>Instagram</span>
+                </a>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Embedded Map -->
+          <div class="map-container">
+            <iframe 
+              src="https://maps.google.com/maps?q=Arm%C3%A1dy%20872%2C%20155%2000%20Praha%2013-Stod%C5%AFlky&t=m&z=15&output=embed&iwloc=near" 
+              title="Kadeřnictví Veronika - Armády 872, Praha-Stodůlky"
+              aria-label="Armády 872, 155 00 Praha 13-Stodůlky"
+              loading="lazy"
+              id="google-map-iframe"
+            ></iframe>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="main-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-logo">
+        <img src="https://kaderniceveronika.cz/wp-content/uploads/2023/03/logo-white.png" alt="Kadeřnice Veronika logo" id="footer-logo-img">
+      </div>
+
+      <ul class="footer-nav">
+        <li><a href="#">Úvod</a></li>
+        <li><a href="#o-mne">O mně</a></li>
+        <li><a href="#cenik">Ceník</a></li>
+        <li><a href="#fotogalerie">Fotogalerie</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="copyright-year">2026</span> KADEŘNICE VERONIKA. Všechna práva vyhrazena.</p>
+        
+        <div class="back-to-top" id="scroll-to-top">
+          <span>Zpět nahoru</span>
+          <i class="fa-solid fa-arrow-up-long"></i>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal (Custom Javascript component) -->
+  <div class="lightbox-modal" id="lightbox">
+    <span class="lightbox-close" id="lightbox-close" aria-label="Zavřít galerii"><i class="fa-solid fa-xmark"></i></span>
+    <span class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Předchozí obrázek"><i class="fa-solid fa-chevron-left"></i></span>
+    <span class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Další obrázek"><i class="fa-solid fa-chevron-right"></i></span>
+    <div class="lightbox-container">
+      <img src="" alt="Zvětšený náhled" class="lightbox-img" id="lightbox-img">
+      <div class="lightbox-caption" id="lightbox-caption">Ukázka práce</div>
+    </div>
+  </div>
+
+  <!-- Custom Script -->
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
